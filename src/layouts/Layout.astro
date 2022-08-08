@@ -19,7 +19,9 @@ const { title } = Astro.props as Props;
 </head>
 
 <body>
-    <slot />
+    <div class="container">
+        <slot />
+    </div>
 </body>
 
 </html>
@@ -31,4 +33,11 @@ const { title } = Astro.props as Props;
     }
 
     body {}
+
+    .container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 8px;
+    }
 </style>
