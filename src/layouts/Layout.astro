@@ -1,4 +1,6 @@
 ---
+import "../styles/reset.css";
+import "@fontsource/metropolis";
 export interface Props {
     title: string;
 }
@@ -13,11 +15,6 @@ const { title } = Astro.props as Props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-
     <title>{title}</title>
 </head>
 
@@ -30,10 +27,8 @@ const { title } = Astro.props as Props;
     :root {}
 
     html {
-        font-family: 'Work Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Metropolis', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
-    body {
-        margin: 0;
-    }
+    body {}
 </style>
